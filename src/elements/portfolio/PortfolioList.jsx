@@ -1,28 +1,32 @@
 import React, { Component } from "react";
 
 const PortfolioListContent = [
-    {
-        image: 'image-1',
-        category: 'Store',
-        title: 'Firezon'
-    },
-    {
-        image: 'image-2',
-        category: 'API Manegement',
-        title: 'Twistify'
-    },
-    {
-        image: 'image-3',
-        category: 'Music',
-        title: 'Jambox'
-    },
-    {
-        image: 'image-4',
-        category: 'Web Scrapper',
-        title: 'Scrappy'
-    },
-
-]
+	{
+		image: 'image-1',
+		category: 'Store',
+		title: 'Firezon',
+	},
+	{
+		image: 'image-2',
+		category: 'API Manegement',
+		title: 'Twistify',
+	},
+	{
+		image: 'image-3',
+		category: 'Project & Team Management',
+		title: 'Note-ary',
+	},
+	{
+		image: 'image-4',
+		category: 'Web Scrapper',
+		title: 'Scrappy',
+	},
+	{
+		image: 'image-4',
+		category: 'Music',
+		title: 'Jambox',
+	},
+];
 
 class PortfolioList extends Component{
     render(){

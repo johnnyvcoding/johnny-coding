@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
-import Footer from "../component/footer/Footer";
 
 import SliderOne from "../component/slider/SliderOne";
 import ServiceTwo from "../elements/service/ServiceTwo";
@@ -18,7 +17,7 @@ class MainDemo extends Component{
     render(){
         const PostList = BlogContent.slice(0 , 3);
         return(
-            <div className="active-dark"> 
+            <div className="active-dark">
                 <Helmet pageTitle="Main Demo Dark" />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
@@ -108,8 +107,8 @@ class MainDemo extends Component{
                                     </div>
                                 </div>
                             ))}
-                        </div>    
-                    </div>    
+                        </div>
+                    </div>
                 </div>
                 {/* End Blog Area */}
 
@@ -131,9 +130,8 @@ class MainDemo extends Component{
                     </ScrollToTop>
                 </div>
                 {/* End Back To Top */}
-                
-                <Footer />
-                
+
+
             </div>
         )
     }

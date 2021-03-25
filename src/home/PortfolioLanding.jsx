@@ -1,14 +1,23 @@
 import React from 'react';
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from 'react-icons/fi';
+
+
 import HeaderThree from '../component/header/HeaderThree';
 import FooterTwo from '../component/footer/FooterTwo';
+
 import TabTwo from '../elements/tab/TabTwo';
+
 import ContactOne from '../elements/contact/ContactOne';
+
 import PortfolioList from '../elements/portfolio/PortfolioList';
+
 import ServiceList from '../elements/service/ServiceList';
+
 import BlogContent from '../elements/blog/BlogContent';
+
 import Helmet from '../component/common/Helmet';
+
 import TextLoop from 'react-text-loop';
 
 const SlideList = [
@@ -130,7 +139,7 @@ const PortfolioLanding = () => {
 						<div className='row'>
 							<div className='col-lg-12'>
 								<div className='section-title text-center service-style--3 mb--30 mb_sm--0'>
-									<h2 className='title'>My Awesome Service</h2>
+									<h2 className='title'>Skills</h2>
 									<p>
 										There are many variations of passages of Lorem Ipsum
 										available, but the majority have suffered alteration.

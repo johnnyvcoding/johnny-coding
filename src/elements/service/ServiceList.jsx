@@ -1,45 +1,52 @@
 import React ,{ Component }from "react";
-import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+import { FiGithub , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
 
 const ServiceList = [
-    {
-        icon: <FiCast />,
-        title: 'Business Stratagy',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FiLayers />,
-        title: 'Website Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    { 
-        icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FiUsers />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    { 
-        icon: <FiMonitor />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    }
-]
+	{
+		icon: <FiMonitor />,
+		title: 'Front-End Development',
+		description:
+			'I throw myself down among the tall grass by the stream as I lie close to the earth.',
+	},
+
+	{
+		icon: <FiLayers />,
+		title: 'Back-end Development',
+		description:
+			'I throw myself down among the tall grass by the stream as I lie close to the earth.',
+	},
+	{
+		icon: <FiGithub />,
+		title: 'Github Management',
+		description:
+			'I throw myself down among the tall grass by the stream as I lie close to the earth.',
+	},
+	{
+		icon: <FiUsers />,
+		title: 'Communication',
+		description:
+			'I throw myself down among the tall grass by the stream as I lie close to the earth.',
+	},
+	{
+		icon: <FiMonitor />,
+		title: 'Mobile App Development',
+		description:
+			'I throw myself down among the tall grass by the stream as I lie close to the earth.',
+	},
+	{
+		icon: <FiUsers />,
+		title: 'Marketing & Reporting',
+		description:
+			'I throw myself down among the tall grass by the stream as I lie close to the earth.',
+	},
+];
 
 
 class ServiceThree extends Component{
     render(){
         const {column } = this.props;
         const ServiceContent = ServiceList.slice(0 , this.props.item);
-        
+
         return(
             <React.Fragment>
                 <div className="row">

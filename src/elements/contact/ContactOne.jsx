@@ -1,30 +1,42 @@
 import React, { Component } from 'react';
 
+  const encode = (data) => {
+		return Object.keys(data)
+			.map(
+				(key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+			)
+			.join('&');
+	};
+
+
+
 class ContactOne extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			rnName: '',
-			rnEmail: '',
-			rnSubject: '',
-			rnMessage: '',
+			name: '',
+			email: '',
+			subject: '',
+			message: '',
 		};
-
-		// this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
-	// handleSubmit(e) {
-	// 	e.preventDefault();
+	handleSubmit = (e) => {
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: encode({ 'form-name': 'contact', ...this.state }),
+		})
+			.then(() => alert('Success!'))
+			.catch((error) => alert(error));
 
-	// 	fetch('/', {
-	// 		method: 'POST',
-	// 		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-	// 	})
-	// 		.then(() => console.log('Form successfully submitted'))
-	// 		.catch((error) => alert(error));
-	// }
+		e.preventDefault();
+	};
+
+	handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
 	render() {
+        console.log('this is the state', this.state)
 		return (
 			<div className='contact-form--1'>
 				<div className='container'>
@@ -47,9 +59,7 @@ class ContactOne extends Component {
 											name='name'
 											id='item01'
 											value={this.state.rnName}
-											onChange={(e) => {
-												this.setState({ rnName: e.target.value });
-											}}
+											onChange={this.handleChange}
 											placeholder='Your Name *'
 										/>
 									</label>
@@ -60,9 +70,7 @@ class ContactOne extends Component {
 											name='email'
 											id='item02'
 											value={this.state.rnEmail}
-											onChange={(e) => {
-												this.setState({ rnEmail: e.target.value });
-											}}
+											onChange={this.handleChange}
 											placeholder='Your email *'
 										/>
 									</label>
@@ -73,9 +81,7 @@ class ContactOne extends Component {
 											name='subject'
 											id='item03'
 											value={this.state.rnSubject}
-											onChange={(e) => {
-												this.setState({ rnSubject: e.target.value });
-											}}
+											onChange={this.handleChange}
 											placeholder='Write a Subject'
 										/>
 									</label>
@@ -85,9 +91,7 @@ class ContactOne extends Component {
 											id='item04'
 											name='message'
 											value={this.state.rnMessage}
-											onChange={(e) => {
-												this.setState({ rnMessage: e.target.value });
-											}}
+											onChange={this.handleChange}
 											placeholder='Your Message'
 										/>
 									</label>
@@ -97,7 +101,7 @@ class ContactOne extends Component {
 										value='submit'
 										name='submit'
 										id='mc-embedded-subscribe'
-                                        onClick={(e) => e.preventDefault()}
+										onClick={(e) => e.preventDefault()}
 									>
 										Submit
 									</button>

@@ -45,7 +45,7 @@ class ContactOne extends Component {
 							<div className='section-title text-left mb--50'>
 								<h2 className='title'>Contact Me.</h2>
 								<p className='description'>
-									I am available for work or for questions! Connect with me via
+									I'm available for work or for questions! Connect with me via
 									phone: <a href='tel:+12246278147'>224-627-8147</a> or email:
 									<a href='mailto:me@johnny.com'> me@johnnycoding.com</a>{' '}
 								</p>

@@ -23,7 +23,7 @@ class ContactOne extends Component{
                             </div>
                             <div className="form-wrapper">
 
-                                <form name="contact" data-netlify="true" method="POST" onSubmit="submit" >
+                                <form name="contact" data-netlify="true" method="POST">
                                     <input type="hidden"  value="contact"  name="form-name" />
                                     <label htmlFor="item01">
                                         <input

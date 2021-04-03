@@ -12,49 +12,42 @@
 	</head>
 
 	<body>
+		<form
+			name="contact"
+			data-netlify="true"
+			action="/"
+			netlify
+      netlify-honeypot="bot-field"
+			hidden
+		>
+			<input type="hidden" value="contact" />
+			<label htmlFor="item01">
+				<input
+					type="text"
+					name="name"
+				/>
+			</label>
+
+			<label htmlFor="item02">
+				<input
+					type="text"
+					name="email"
+				/>
+			</label>
+
+			<label htmlFor="item03">
+				<input
+					type="text"
+					name="subject"
+				/>
+			</label>
+			<label htmlFor="item04">
+				<textarea type="text" id="item04" name="message"></textarea>
+			</label>
+		</form>
+
 		<noscript>You need to enable JavaScript to run this app.</noscript>
-		<div id="root">
-			<form
-				name="contact"
-				data-netlify="true"
-				method="post"
-        action="POST"
-				onSubmit="submit"
-				netlify
-				hidden
-			>
-				<input type="hidden" value="contact" />
-				<label htmlFor="item01">
-					<input
-						type="text"
-						name="name"
-						id="item01"
-						value="{this.state.rnName}"
-					/>
-				</label>
-
-				<label htmlFor="item02">
-					<input
-						type="text"
-						name="email"
-						id="item02"
-						value="{this.state.rnEmail}"
-					/>
-				</label>
-
-				<label htmlFor="item03">
-					<input
-						type="text"
-						name="subject"
-						id="item03"
-						value="{this.state.rnSubject}"
-					/>
-				</label>
-				<label htmlFor="item04">
-					<textarea type="text" id="item04" name="message"></textarea>
-				</label>
-			</form>
-		</div>
+		<div id="root"></div>
 
 		<script src="assets/js/main.js"></script>
 	</body>

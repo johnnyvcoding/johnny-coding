@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 
-  const encode = (data) => {
-		return Object.keys(data)
-			.map(
-				(key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
-			)
-			.join('&');
-	};
-
-
+const encode = (data) => {
+	return Object.keys(data)
+		.map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+		.join('&');
+};
 
 class ContactOne extends Component {
 	constructor(props) {
@@ -36,7 +32,9 @@ class ContactOne extends Component {
 	handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
 	render() {
-        console.log('this is the state', this.state)
+		console.log('this is the state', this.state);
+		console.log('th state', this.state);
+
 		return (
 			<div className='contact-form--1'>
 				<div className='container'>
@@ -51,7 +49,7 @@ class ContactOne extends Component {
 								</p>
 							</div>
 							<div className='form-wrapper'>
-								<form name='contact' data-netlify='true' method='POST'>
+								<form onSubmit={this.handleSubmit}>
 									<input type='hidden' value='contact' name='form-name' />
 									<label htmlFor='item01'>
 										<input
@@ -101,7 +99,6 @@ class ContactOne extends Component {
 										value='submit'
 										name='submit'
 										id='mc-embedded-subscribe'
-										onClick={(e) => e.preventDefault()}
 									>
 										Submit
 									</button>

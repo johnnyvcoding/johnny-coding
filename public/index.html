@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/jc.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="%PUBLIC_URL%/jc.jpg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <title>Johnny Coding</title>
+		<title>Johnny Coding</title>
+	</head>
 
-  </head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="root">
+			<form
+				name="contact"
+				data-netlify="true"
+				method="post"
+				onSubmit="submit"
+				netlify
+				hidden
+			>
+				<input type="hidden" value="contact" />
+				<label htmlFor="item01">
+					<input
+						type="text"
+						name="name"
+						id="item01"
+						value="{this.state.rnName}"
+					/>
+				</label>
 
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+				<label htmlFor="item02">
+					<input
+						type="text"
+						name="email"
+						id="item02"
+						value="{this.state.rnEmail}"
+					/>
+				</label>
 
-    <script src="assets/js/main.js"></script>
+				<label htmlFor="item03">
+					<input
+						type="text"
+						name="subject"
+						id="item03"
+						value="{this.state.rnSubject}"
+					/>
+				</label>
+				<label htmlFor="item04">
+					<textarea type="text" id="item04" name="message"></textarea>
+				</label>
+			</form>
+		</div>
 
-  </body>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>

@@ -1,17 +1,20 @@
 import React ,{ Component }from "react";
 import { FiGithub , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+import { FaReact, FaNodeJs } from 'react-icons/fa';
+import { DiPostgresql } from 'react-icons/di';
+import { SiRedux } from 'react-icons/si';
 
 const ServiceList = [
 	{
-		icon: <FiMonitor />,
-		title: 'Front-End Development',
+		icon: <SiRedux />,
+		title: 'Redux',
 		description:
 			'I throw myself down among the tall grass by the stream as I lie close to the earth.',
 	},
 
 	{
-		icon: <FiLayers />,
-		title: 'Back-end Development',
+		icon: <DiPostgresql />,
+		title: 'Postgresql',
 		description:
 			'I throw myself down among the tall grass by the stream as I lie close to the earth.',
 	},
@@ -28,14 +31,14 @@ const ServiceList = [
 			'I throw myself down among the tall grass by the stream as I lie close to the earth.',
 	},
 	{
-		icon: <FiMonitor />,
-		title: 'Mobile App Development',
+		icon: <FaNodeJs />,
+		title: 'Node',
 		description:
 			'I throw myself down among the tall grass by the stream as I lie close to the earth.',
 	},
 	{
-		icon: <FiUsers />,
-		title: 'Marketing & Reporting',
+		icon: <FaReact />,
+		title: 'React',
 		description:
 			'I throw myself down among the tall grass by the stream as I lie close to the earth.',
 	},

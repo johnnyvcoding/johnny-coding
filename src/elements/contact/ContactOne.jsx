@@ -32,9 +32,6 @@ class ContactOne extends Component {
 	handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
 	render() {
-		console.log('this is the state', this.state);
-		console.log('johnny', this.state);
-
 		return (
 			<div className='contact-form--1'>
 				<div className='container'>

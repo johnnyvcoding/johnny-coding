@@ -141,8 +141,8 @@ const PortfolioLanding = () => {
 								<div className='section-title text-center service-style--3 mb--30 mb_sm--0'>
 									<h2 className='title'>Skills</h2>
 									<p>
-										There are many variations of passages of Lorem Ipsum
-										available, but the majority have suffered alteration.
+										"The future belongs to those who learn more skills and
+										combine them in creative ways"
 									</p>
 								</div>
 							</div>
@@ -153,6 +153,19 @@ const PortfolioLanding = () => {
 									item='6'
 									column='col-lg-4 col-md-6 col-sm-6 col-12 text-left'
 								/>
+							</div>
+						</div>
+					</div>
+					<div className='row'>
+						<div className='col-lg-12'>
+							<div className='view-more-btn mt--60 mt_sm--30 text-center'>
+								<a
+									className='rn-button-style--2 btn-solid'
+									href='https://drive.google.com/file/d/123HHeoFNDnz2xs4J-YTEc06QmmZ-huR6/view?usp=sharing'
+									target='_blank'
+								>
+									<span>View My Resume</span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -170,7 +183,9 @@ const PortfolioLanding = () => {
 									<div className='section-title text-center service-style--3 mb--30 mb_sm--0'>
 										<h2 className='title'>My Latest Projects</h2>
 										<p>
-											Projects are my way of mastering and learning new concepts. My goal everytime is to build something that I can learn from whether as a person or engineer.
+											Projects are my way of mastering and learning new
+											concepts. My goal everytime is to build something that I
+											can learn from whether as a person or engineer.
 										</p>
 									</div>
 								</div>
@@ -185,7 +200,11 @@ const PortfolioLanding = () => {
 							<div className='row'>
 								<div className='col-lg-12'>
 									<div className='view-more-btn mt--60 mt_sm--30 text-center'>
-										<a className='rn-button-style--2 btn-solid' href='http://github.com/johnnyvcoding'>
+										<a
+											className='rn-button-style--2 btn-solid'
+											href='http://github.com/johnnyvcoding'
+											target='_blank'
+										>
 											<span>View More</span>
 										</a>
 									</div>

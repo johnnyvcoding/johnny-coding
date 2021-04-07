@@ -26,7 +26,7 @@ class HeaderThree extends Component {
 
 		//  this.subMetuTrigger = this.subMetuTrigger.bind(this);
 		window.addEventListener('load', function () {
-			console.log('All assets are loaded');
+			console.log('Welcome to Johnny Coding, fellow developer!');
 		});
 	}
 	menuTrigger() {
@@ -117,7 +117,7 @@ class HeaderThree extends Component {
 									<a href='#about'>About</a>
 								</li>
 								<li>
-									<a href='#service'>Service</a>
+									<a href='#service'>Skills</a>
 								</li>
 								<li>
 									<a href='#portfolio'>Portfolio</a>

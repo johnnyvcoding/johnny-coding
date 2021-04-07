@@ -2,39 +2,40 @@ import React, { Component } from 'react';
 
 const PortfolioListContent = [
 	{
-		image: 'image-3',
+		image:
+			'image-3',
 		category: 'Project & Team Management',
 		title: 'Note-ary',
 		link: 'https://www.note-ary.com/',
 	},
 
 	{
-		image: 'image-1',
+		image: 'image-2',
 		category: 'Store',
 		title: 'Firezon',
-		link: 'https://foxflamegraceshopper.herokuapp.com/',
+		link: 'https://flameazon.com',
 	},
 	{
-		image: 'image-2',
+		image: 'image-1',
 		category: 'API Manegement',
 		title: 'Twistify',
 		link: 'https://twistify.net/',
 	},
 
-	{
-		image: 'image-4',
-		category: 'Web Scrapper',
-		title: 'Scrappy',
-		link:
-			'https://i.pinimg.com/originals/30/75/41/3075410e0a69976beb57e0949d8007c8.png',
-	},
-	{
-		image: 'image-4',
-		category: 'Music',
-		title: 'Jambox',
-		link:
-			'https://i.pinimg.com/originals/30/75/41/3075410e0a69976beb57e0949d8007c8.png',
-	},
+	// {
+	// 	image: 'image-4',
+	// 	category: 'Web Scrapper',
+	// 	title: 'Scrappy',
+	// 	link:
+	// 		'https://i.pinimg.com/originals/30/75/41/3075410e0a69976beb57e0949d8007c8.png',
+	// },
+	// {
+	// 	image: 'image-4',
+	// 	category: 'Music',
+	// 	title: 'Jambox',
+	// 	link:
+	// 		'https://i.pinimg.com/originals/30/75/41/3075410e0a69976beb57e0949d8007c8.png',
+	// },
 ];
 
 class PortfolioList extends Component {

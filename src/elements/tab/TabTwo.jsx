@@ -27,7 +27,11 @@ class TabsTwo extends Component{
 												<div className='single-tab-content'>
 													<ul>
 														<li>
-															<a href='/service'>
+															<a
+																href='https://drive.google.com/file/d/123HHeoFNDnz2xs4J-YTEc06QmmZ-huR6/view?usp=sharing'
+																target='_blank'
+																rel='noopener noreferrer'
+															>
 																Front-End Development<span> - Client Side</span>
 															</a>
 															Rich interfaces built with technologies such as
@@ -44,7 +48,11 @@ class TabsTwo extends Component{
 															such as servers, databases, and APIs.
 														</li>
 														<li>
-															<a href='/service'>
+															<a
+																href='https://drive.google.com/file/d/123HHeoFNDnz2xs4J-YTEc06QmmZ-huR6/view?usp=sharing'
+																target='_blank'
+																rel='noopener noreferrer'
+															>
 																Soft Skills <span> - Being Human :)</span>
 															</a>
 															It is important to be a good person for yourself
@@ -64,6 +72,7 @@ class TabsTwo extends Component{
 															<a
 																href='https://www.collegeboard.org/'
 																target='_blank'
+																rel='noopener noreferrer'
 															>
 																SAT Tutor<span> - College Board</span>
 															</a>{' '}
@@ -78,6 +87,7 @@ class TabsTwo extends Component{
 															<a
 																href='https://www.facebook.com/teamopticsolutions/'
 																target='_blank'
+																rel='noopener noreferrer'
 															>
 																Technician<span> - Optic Solutions</span>
 															</a>{' '}
@@ -91,7 +101,7 @@ class TabsTwo extends Component{
 												<div className='single-tab-content'>
 													<ul>
 														<li>
-															<a href='/service'>
+															<a href='https://drive.google.com/file/d/123HHeoFNDnz2xs4J-YTEc06QmmZ-huR6/view?usp=sharing'>
 																Bachelor of Mathematics
 																<span>
 																	{' '}
@@ -101,7 +111,11 @@ class TabsTwo extends Component{
 															2020
 														</li>
 														<li>
-															<a href='/service'>
+															<a
+																href='https://drive.google.com/file/d/123HHeoFNDnz2xs4J-YTEc06QmmZ-huR6/view?usp=sharing'
+																target='_blank'
+																rel='noopener noreferrer'
+															>
 																Software Engineering
 																<span> - Fullstack Academy, Chicago, IL</span>
 															</a>{' '}

@@ -59,7 +59,7 @@ class PortfolioList extends Component {
 									</h4>
 									<div className='portfolio-button'>
 										<a className='rn-btn' href={value.link}>
-											View Details
+											View Project
 										</a>
 									</div>
 								</div>

@@ -15,7 +15,7 @@ const SocialShare = [
 	{ Social: <FaInstagram />, link: 'https://www.instagram.com/johnnyvlife' },
 	{
 		Social: <FaTwitter />,
-		link: 'https://twitter.com/https://github.com/johnnyvcoding',
+		link: 'https://twitter.com/johnnyvcoding',
 	},
 ];
 
@@ -45,7 +45,7 @@ const FooterTwo = () => {
 							<ul className='social-share rn-lg-size d-flex justify-content-center liststyle'>
 								{SocialShare.map((val, i) => (
 									<li key={i}>
-										<a href={`${val.link}`}>{val.Social}</a>
+										<a href={`${val.link}`} target="_blank" rel="noopener noreferrer">{val.Social}</a>
 									</li>
 								))}
 							</ul>

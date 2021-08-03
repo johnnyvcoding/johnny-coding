@@ -10,9 +10,8 @@ const SocialShare = [
 	{ Social: <FaGithub />, link: 'https://github.com/johnnyvcoding' },
 	{
 		Social: <FaLinkedinIn />,
-		link: 'https://www.linkedin.com/in/johnny-vazquez-6428581a5/',
+		link: 'https://www.linkedin.com/in/johnny-vazquez/',
 	},
-	{ Social: <FaInstagram />, link: 'https://www.instagram.com/johnnyvlife' },
 	{
 		Social: <FaTwitter />,
 		link: 'https://twitter.com/johnnyvcoding',

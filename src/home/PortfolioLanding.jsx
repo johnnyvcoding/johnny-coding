@@ -53,7 +53,7 @@ const PortfolioLanding = () => {
 									<div className='col-lg-5'>
 										<div className='designer-thumbnail'>
 											<img
-												src='/assets/images/about/bw.jpg'
+												src='https://ik.imagekit.io/sdlmfkhptke/bw_E7QRG1GgY.jpg?updatedAt=1628016118449'
 												alt='Slider Images'
 											/>
 										</div>

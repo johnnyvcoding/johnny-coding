@@ -105,7 +105,7 @@ class ContactOne extends Component {
 						<div className='col-lg-6 order-1 order-lg-2'>
 							<div className='thumbnail mb_md--30 mb_sm--30'>
 								<img
-									src='/assets/images/about/maingdl.JPG'
+									src='https://ik.imagekit.io/sdlmfkhptke/maingdl_NdQCzxVBDDn.jpg?updatedAt=1628016118888'
 									alt='Me in Guadalajara, Jalisco, Mexico'
 								/>
 							</div>
